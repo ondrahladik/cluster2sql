@@ -5,7 +5,7 @@ import re
 
 HOST = "cluster.example.com"
 PORT = 23
-CALLSIGN = "callsign"
+CALLSIGN = "YourCallsign"
 
 DB_CONFIG = {
     "host": "localhost",
