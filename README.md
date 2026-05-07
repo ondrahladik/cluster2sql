@@ -8,8 +8,7 @@
 - MySQL/MariaDB server  
 
 ## Configuration
-
-Edit the following variables in the `cluster.py` file: 
+Copy the `config.py.example` file to `config.py` and edit the variables to match your DX Cluster and database settings.
 
 ```python
 HOST = "cluster.example.com"      # DX Cluster address
