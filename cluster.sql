@@ -4,7 +4,6 @@ CREATE TABLE `cluster` (
   `freq` DECIMAL(10,1) NOT NULL,
   `dx` VARCHAR(32) NOT NULL,
   `message` TEXT DEFAULT NULL,
-  `time` TIME NOT NULL,
   `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   INDEX (`dx`),
