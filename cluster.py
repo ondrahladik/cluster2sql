@@ -63,7 +63,6 @@ async def main():
                 freq = float(match.group(2))
                 dx = match.group(3)
                 message = match.group(4).strip()
-                time = match.group(5)
 
                 sql = """
                     INSERT INTO cluster
@@ -71,24 +70,22 @@ async def main():
                         spotter,
                         freq,
                         dx,
-                        message,
-                        time
+                        message
                     )
-                    VALUES (%s, %s, %s, %s, %s)
+                    VALUES (%s, %s, %s, %s)
                 """
 
                 values = (
                     spotter,
                     freq,
                     dx,
-                    message,
-                    time
+                    message
                 )
 
                 cursor.execute(sql, values)
                 db.commit()
 
-                print(f"{time} - DX de {spotter}: {freq} MHz {dx}")
+                print(f"DX de {spotter}: {freq} MHz {dx}")
         
 try:
     asyncio.run(main())
