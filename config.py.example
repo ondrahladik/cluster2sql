@@ -1,0 +1,10 @@
+HOST = "cluster.example.com"
+PORT = 23
+CALLSIGN = "YourCallsign"
+
+DB_CONFIG = {
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "cluster"
+}

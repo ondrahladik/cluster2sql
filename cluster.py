@@ -2,17 +2,7 @@ import asyncio
 import telnetlib3
 import mysql.connector
 import re
-
-HOST = "cluster.example.com"
-PORT = 23
-CALLSIGN = "YourCallsign"
-
-DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",
-    "password": "",
-    "database": "cluster"
-}
+from config import DB_CONFIG, HOST, PORT, CALLSIGN
 
 db = mysql.connector.connect(**DB_CONFIG)
 cursor = db.cursor()
